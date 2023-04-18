@@ -55,7 +55,7 @@ fun NavigationDrawer(
     val scope = rememberCoroutineScope()
 
     var selectedItem by remember {
-        mutableStateOf<DrawerScreens>(DrawerScreens.Wallhaven)
+        mutableStateOf<DrawerScreens>(DrawerScreens.MiCarousel)
     }
 
     ModalNavigationDrawer(

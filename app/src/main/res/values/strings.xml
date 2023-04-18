@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Wall You</string>
+    <string name="app_name" translatable="false">Wall You X</string>
     <string name="wallhaven" translatable="false">Wallhaven</string>
+    <string name="miwalls" translatable="false">Mi Carousel</string>
     <string name="picsum" translatable="false">Picsum</string>
     <string name="owalls" translatable="false">OWalls</string>
     <string name="unsplash" translatable="false">Unsplash</string>

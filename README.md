@@ -1,7 +1,8 @@
 <!-- ---------- Header ---------- -->
 <div align="center">
   <img width="200" height="200"src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">
-  <h1>Wall You</h1>
+  <h1>Wall You X</h1>
+<i>This repository forked from original <a href="https://github.com/Bnyro/WallYou">Wall You</a> with additional features</i>
 <p>Wallpaper App built with <a href="https://m3.material.io/">Material Design 3 (You)</a></p>
 
 <!-- ---------- Badges ---------- -->

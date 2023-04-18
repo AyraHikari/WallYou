@@ -18,7 +18,7 @@ import com.bnyro.wallpaper.util.ApiHolder
 fun AppNavHost(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
-    startDestination: String = DrawerScreens.Wallhaven.route,
+    startDestination: String = DrawerScreens.MiCarousel.route,
     viewModel: MainModel
 ) {
     NavHost(
@@ -26,6 +26,11 @@ fun AppNavHost(
         navController = navController,
         startDestination = startDestination
     ) {
+        composable(DrawerScreens.MiCarousel.route) {
+            viewModel.titleResource = R.string.miwalls
+            viewModel.api = ApiHolder.miApi
+            WallpaperPage(viewModel)
+        }
         composable(DrawerScreens.Wallhaven.route) {
             viewModel.titleResource = R.string.wallhaven
             viewModel.api = ApiHolder.whApi

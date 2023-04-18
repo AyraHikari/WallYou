@@ -1,13 +1,7 @@
 package com.bnyro.wallpaper.ui.nav
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Air
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.Info
-import androidx.compose.material.icons.filled.Landscape
-import androidx.compose.material.icons.filled.Pix
-import androidx.compose.material.icons.filled.Settings
-import androidx.compose.material.icons.filled.WaterDrop
+import androidx.compose.material.icons.filled.*
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.bnyro.wallpaper.R
 
@@ -17,6 +11,7 @@ sealed class DrawerScreens(
     val icon: ImageVector,
     val divideBefore: Boolean = false
 ) {
+    object MiCarousel : DrawerScreens(R.string.miwalls, "mi", Icons.Default.PhotoAlbum)
     object Wallhaven : DrawerScreens(R.string.wallhaven, "wh", Icons.Default.Landscape)
     object Picsum : DrawerScreens(R.string.picsum, "ps", Icons.Default.Pix)
 
@@ -28,7 +23,7 @@ sealed class DrawerScreens(
     object About : DrawerScreens(R.string.about, "about", Icons.Default.Info)
 
     companion object {
-        val apiScreens = listOf(Wallhaven, Unsplash, OWalls, Picsum)
+        val apiScreens = listOf(MiCarousel, Wallhaven, Unsplash, OWalls, Picsum)
         val screens = listOf(*apiScreens.toTypedArray(), Favorites, Settings, About)
     }
 }
